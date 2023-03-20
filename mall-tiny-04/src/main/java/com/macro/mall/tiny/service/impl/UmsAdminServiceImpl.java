@@ -91,7 +91,7 @@ public class UmsAdminServiceImpl implements UmsAdminService {
         } catch (AuthenticationException e) {
             LOGGER.warn("登录异常:{}", e.getMessage());
         }
-        return token;
+        return tokenHead + token;
     }
 
 
